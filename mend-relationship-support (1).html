@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mend — Relationship Counseling & Support</title>
+<meta name="description" content="Online relationship counseling for couples and individuals: communication, trust, intimacy, money stress and life transitions. Warm, practical, private.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FBF6F0;--ink:#3B1F2B;--mut:rgba(59,31,43,.7);--rose:#C65D4A;--sage:#5F8A73;--blush:#F3DDD3;--line:#E8DCD0;--r:16px;
+--f1:"Fraunces",Georgia,serif;--f2:"DM Sans",system-ui,sans-serif;
+--i1:url('https://images.pexels.com/photos/15630856/pexels-photo-15630856/free-photo-of-setting-sun-illuminating-a-young-couple-holding-hands-and-walking-on-the-grass.jpeg?auto=compress&cs=tinysrgb&w=1400');
+--i2:url('https://images.pexels.com/photos/4098145/pexels-photo-4098145.jpeg?auto=compress&cs=tinysrgb&w=1600');
+--i3:url('https://images.pexels.com/photos/4098367/pexels-photo-4098367.jpeg?auto=compress&cs=tinysrgb&w=1600');
+--i4:url('https://images.pexels.com/photos/7351088/pexels-photo-7351088.jpeg?auto=compress&cs=tinysrgb&w=1600');
+--i5:url('https://images.pexels.com/photos/31549548/pexels-photo-31549548/free-photo-of-couple-strolling-hand-in-hand-on-a-country-path.jpeg?auto=compress&cs=tinysrgb&w=1600');
+--i6:url('https://images.pexels.com/photos/4101193/pexels-photo-4101193.jpeg?auto=compress&cs=tinysrgb&w=1600')}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.6 var(--f2)}
+h1,h2,h3{font-family:var(--f1);font-weight:700;line-height:1.1;margin:0}
+h1{font-size:clamp(2.3rem,5.5vw,4rem)}h2{font-size:clamp(1.7rem,3.5vw,2.5rem)}h3{font-size:1.2rem}
+p{margin:0}a{color:inherit;text-decoration:none}ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px}
+.w{max-width:1120px;margin:0 auto;padding:0 clamp(18px,5vw,48px)}
+section{padding:72px 0}.page[hidden]{display:none}
+.eb{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--rose)}
+.mut{color:var(--mut)}.sh{margin-bottom:36px}.sh h2{margin-top:8px}.sh p{max-width:520px;margin-top:10px;color:var(--mut)}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;background:var(--ink);color:var(--cream);font-weight:700;border:2px solid var(--ink);cursor:pointer;font-family:inherit;font-size:.95rem;transition:.2s}
+.btn:hover{background:var(--rose);border-color:var(--rose);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ink)}.btn.o:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+header{position:sticky;top:0;z-index:20;background:rgba(251,246,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:700 1.6rem var(--f1)}.logo i{color:var(--rose);font-style:normal}
+#menu{display:flex;gap:28px;align-items:center}#menu a{font-weight:500;padding:4px 0}
+#menu a.on{color:var(--rose);border-bottom:2px solid var(--rose)}
+#tg{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink);cursor:pointer}
+.photo{--img:none;--shade:linear-gradient(180deg,rgba(59,31,43,.05),rgba(59,31,43,.82));position:relative;overflow:hidden;border-radius:var(--r);color:#fff;background-color:#6B3A4B;background-image:var(--img),linear-gradient(135deg,#3B1F2B,#8A4A52);background-size:cover;background-position:center}
+.photo:before{content:"";position:absolute;inset:0;background:var(--shade)}.photo>*{position:relative}
+.i1{--img:var(--i1)}.i2{--img:var(--i2)}.i3{--img:var(--i3)}.i4{--img:var(--i4)}.i5{--img:var(--i5)}.i6{--img:var(--i6)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero p.l{font-size:1.15rem;max-width:480px;margin:20px 0 28px;color:var(--mut)}
+.hero .photo{min-height:480px;display:flex;align-items:flex-end;padding:18px}
+.pc{background:#fff;color:var(--ink);border-radius:14px;padding:18px;width:100%}
+.pc b{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sage)}
+.pc p{font:500 1.15rem/1.35 var(--f1);margin:6px 0 12px}
+.pc button{background:none;border:0;color:var(--rose);font-weight:700;cursor:pointer;padding:0;font-family:inherit}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{margin:12px 0 8px}.card p{color:var(--mut);font-size:.95rem}
+.ic{width:44px;height:44px;border-radius:50%;background:var(--blush);display:grid;place-items:center;font-size:1.3rem}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center;padding:30px 0;border-block:1px solid var(--line)}
+.st b{display:block;font:700 1.6rem var(--f1);color:var(--rose)}.st span{font-size:.85rem;color:var(--mut)}
+.ban{min-height:300px;display:flex;align-items:flex-end;padding:34px}.ban h3{font-size:1.7rem;max-width:520px}.ban p{max-width:460px;margin-top:8px;opacity:.9}
+.step b{font:700 2.4rem var(--f1);color:var(--rose)}
+.q{background:var(--blush);border-radius:var(--r);padding:34px}.q fieldset{border:0;padding:0;margin:0 0 16px}
+.q legend{font-weight:700;margin-bottom:6px}.q label{display:inline-block;margin:0 14px 4px 0;font-size:.92rem;cursor:pointer}
+#res{margin-top:18px;background:#fff;border-radius:12px;padding:18px;display:none}#res.s{display:block}
+.price{font:700 2rem var(--f1)}.price small{font:400 .9rem var(--f2);color:var(--mut)}
+.card.f{border-color:var(--rose);border-width:2px}
+.tm{padding:60px clamp(22px,6vw,70px)}.tm p{font:500 clamp(1.2rem,2.4vw,1.7rem)/1.4 var(--f1);max-width:760px}.tm span{display:block;margin-top:14px;opacity:.85;font-size:.9rem}
+.cta{padding:60px clamp(22px,6vw,70px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.cta h2{max-width:520px}
+.cta .btn{background:#fff;color:var(--ink);border-color:#fff}
+.safe{background:#fff;border:1px dashed var(--rose);border-radius:var(--r);padding:18px 22px;font-size:.92rem}
+.ph{padding:56px 0 24px}.ph p{max-width:560px;margin-top:14px;color:var(--mut);font-size:1.1rem}
+.av{aspect-ratio:1;border-radius:var(--r);background:linear-gradient(150deg,var(--sage),#3B1F2B);display:grid;place-items:center;font:700 2.6rem var(--f1);color:#fff;margin-bottom:12px}
+.role{font-size:.8rem;color:var(--rose);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+details{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:0 22px;margin-bottom:12px}
+summary{cursor:pointer;padding:18px 0;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary:after{content:"+";color:var(--rose);font-size:1.4rem;line-height:1}details[open] summary:after{content:"–"}
+details p{padding-bottom:18px;color:var(--mut)}
+.bl summary{flex-direction:column;gap:4px;font:700 1.15rem var(--f1)}.bl summary:after{display:none}.bl small{font:700 .72rem var(--f2);color:var(--sage);text-transform:uppercase;letter-spacing:.1em}
+.bl p+p{padding-top:0}
+form .r{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label.f{display:block;margin-bottom:16px;font-weight:500;font-size:.9rem}
+input,select,textarea{width:100%;margin-top:6px;padding:12px 14px;border:1px solid #cdbfb2;border-radius:10px;background:#fff;font:inherit;color:var(--ink)}
+#ok{display:none;background:#e3efe8;border:1px solid var(--sage);padding:14px;border-radius:10px;margin-bottom:16px;font-weight:500}
+footer{background:var(--ink);color:#f3e6dc;margin-top:40px;padding:50px 0 26px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.fg h4{margin:0 0 10px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+.fg li{margin-bottom:8px}.fg a:hover{color:#f0a493}.cp{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:18px;font-size:.82rem;opacity:.65}
+@media(max-width:860px){.hero,.g2{grid-template-columns:1fr}.g3{grid-template-columns:1fr 1fr}.st{grid-template-columns:1fr 1fr}.hero .photo{min-height:380px}
+#tg{display:block}#menu{display:none;position:absolute;top:68px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:14px clamp(18px,5vw,48px) 20px;border-bottom:1px solid var(--line)}#menu.open{display:flex}.fg{grid-template-columns:1fr}}
+@media(max-width:560px){.g3,form .r{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a href="#home" class="logo">Mend<i>.</i></a>
+<button id="tg" aria-label="Menu" onclick="menu.classList.toggle('open')">☰</button>
+<nav id="menu"><a href="#home">Home</a><a href="#about">About</a><a href="#blog">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#contact" class="btn" style="color:var(--cream)">Book a session</a></nav>
+</div></header>
+
+<!-- HOME -->
+<main class="page" id="p-home">
+<section class="w hero">
+<div><span class="eb">Relationship counseling · online</span>
+<h1 style="margin-top:14px">Hard conversations, made a little easier.</h1>
+<p class="l">Mend pairs you with a licensed counselor who helps you and your partner untangle communication breakdowns, rebuild trust and feel like a team again — in 45-minute video sessions that fit your week.</p>
+<a href="#contact" class="btn">Book a first session</a> <a href="#quiz" class="btn o" onclick="document.getElementById('quiz').scrollIntoView()">Take the check-in</a></div>
+<div class="photo i1"><div class="pc"><b>Try this tonight</b><p id="q">What’s one thing I did this week that made you feel cared for?</p><button id="nq">Another prompt →</button></div></div>
+</section>
+
+<div class="w"><div class="st"><div><b>72 hrs</b><span>Typical wait for a first session</span></div><div><b>45 min</b><span>Video sessions, evenings &amp; weekends</span></div><div><b>1:1 or 2</b><span>Individual or couples counseling</span></div><div><b>Private</b><span>Confidential, encrypted sessions</span></div></div></div>
+
+<section class="w"><div class="sh"><span class="eb">What we help with</span><h2>You’re not the only ones going through this</h2><p>Most couples wait years before asking for help. These are the things people bring us most often.</p></div>
+<div class="g3">
+<div class="card"><div class="ic">💬</div><h3>Communication breakdown</h3><p>Same argument on repeat, silent treatment, feeling unheard or constantly criticized.</p></div>
+<div class="card"><div class="ic">🔒</div><h3>Trust &amp; betrayal</h3><p>Infidelity, secrets or broken promises — and the slow work of deciding what happens next.</p></div>
+<div class="card"><div class="ic">🤝</div><h3>Distance &amp; intimacy</h3><p>Feeling like roommates, mismatched needs for closeness, or a spark that has faded.</p></div>
+<div class="card"><div class="ic">💸</div><h3>Money &amp; life stress</h3><p>Debt, work pressure, caregiving and the strain they put on the two of you.</p></div>
+<div class="card"><div class="ic">🏠</div><h3>Family &amp; in-laws</h3><p>Boundaries, parenting differences and pressure from extended family.</p></div>
+<div class="card"><div class="ic">🌱</div><h3>Big decisions &amp; endings</h3><p>Moving in, marriage, separation or breakups — whichever way you decide to go.</p></div>
+</div></section>
+
+<section class="w" style="padding-top:0"><div class="photo ban i2"><div><h3>Not a verdict. A conversation with someone on both your sides.</h3><p>Our counselors don’t take sides or assign blame. They help each of you be understood.</p></div></div></section>
+
+<section class="w"><div class="sh"><span class="eb">How it works</span><h2>Three steps to getting unstuck</h2></div>
+<div class="g3"><div class="step"><b>01</b><h3>Tell us what’s going on</h3><p class="mut">A short form and a free 15-minute call to find the right counselor for you.</p></div>
+<div class="step"><b>02</b><h3>Meet your counselor</h3><p class="mut">Weekly video sessions, together or solo, with practical tools to use between sessions.</p></div>
+<div class="step"><b>03</b><h3>Notice the shift</h3><p class="mut">Review progress together and decide how much more support you want.</p></div></div></section>
+
+<section class="w" id="quiz"><div class="g2"><div><span class="eb">Quick check-in</span><h2 style="margin:8px 0 12px">Where are you two right now?</h2><p class="mut">Five statements, about a minute. It isn’t a diagnosis — just a gentle snapshot to help you decide whether support might help.</p></div>
+<form class="q" id="qz"><div id="qs"></div><button class="btn" type="submit">See my reflection</button><div id="res" role="status"></div></form></div></section>
+
+<section class="w"><div class="sh"><span class="eb">Sessions</span><h2>Simple, transparent pricing</h2><p>Sample rates — sliding-scale spots are available on request.</p></div>
+<div class="g3"><div class="card"><h3>Individual</h3><div class="price">$85<small> / session</small></div><p>One-to-one support for relationship stress, breakups or patterns you want to understand.</p></div>
+<div class="card f"><h3>Couples</h3><div class="price">$120<small> / session</small></div><p>Joint sessions with one counselor. Most popular for communication and trust work.</p></div>
+<div class="card"><h3>Reconnect program</h3><div class="price">$630<small> / 6 sessions</small></div><p>A structured six-week plan for couples, with exercises to practise at home.</p></div></div></section>
+
+<section class="w" style="padding-top:0"><div class="photo tm i5"><p>“We’d stopped talking about anything except logistics. Six sessions in, we were laughing at dinner again. Our counselor never picked a side — she just helped us hear each other.”</p><span>— Anika &amp; Rohan, couples sessions</span></div></section>
+
+<section class="w" style="padding-top:0"><div class="photo cta i4"><h2>You don’t have to wait for a crisis to ask for help.</h2><a href="#contact" class="btn">Book a free intro call</a></div></section>
+
+<section class="w" style="padding-top:0"><div class="safe"><b>If you’re in danger or fear for your safety,</b> contact your local emergency number (e.g. 112, 911, 999) right away. Mend is not an emergency service. If your partner is controlling, threatening or violent, please contact a domestic abuse helpline first — couples counseling is not appropriate in those situations.</div></section>
+</main>
+
+<!-- ABOUT -->
+<main class="page" id="p-about" hidden>
+<div class="w ph"><span class="eb">About Mend</span><h1 style="margin-top:12px">Relationships are hard. Getting help shouldn’t be.</h1><p>We started Mend because the people we saw in therapy rooms had waited too long, and the right support was too hard to reach.</p></div>
+<section class="w" style="padding-top:20px"><div class="photo ban i3"><div><h3>Warm, practical, and never one-sided.</h3><p>Evidence-informed methods, explained in plain language.</p></div></div></section>
+<section class="w"><div class="g2"><div><h2>Our story</h2><p class="mut" style="margin:14px 0">Mend began in 2019 when a group of licensed marriage and family therapists noticed the same thing: couples were arriving after years of silence, when small problems had hardened into big ones.</p><p class="mut">So we built a service that makes the first step easy — evening and weekend video sessions, quick matching, honest pricing and counselors who are trained to be on both partners’ side at once.</p></div>
+<div class="card" style="background:var(--blush);border:0"><h3>What we believe</h3><ul class="mut" style="margin-top:12px;display:grid;gap:10px"><li>✔ Both voices matter equally.</li><li>✔ Patterns, not people, are the problem.</li><li>✔ Small daily habits beat grand gestures.</li><li>✔ Your story stays private.</li></ul></div></div></section>
+<section class="w"><div class="sh"><span class="eb">Our counselors</span><h2>The people you’ll talk to</h2><p>Sample profiles — replace with your real team and credentials.</p></div>
+<div class="g3" style="grid-template-columns:repeat(4,1fr)">
+<div><div class="av">MC</div><h3>Dr. Maya Collins</h3><div class="role">Founder · Couples therapy</div><p class="mut">Licensed marriage &amp; family therapist focused on communication patterns.</p></div>
+<div><div class="av">DO</div><h3>Daniel Ortiz</h3><div class="role">Conflict &amp; communication</div><p class="mut">Helps couples break out of repetitive arguments.</p></div>
+<div><div class="av">PN</div><h3>Priya Nair</h3><div class="role">Individual &amp; attachment</div><p class="mut">Supports people through breakups and relationship anxiety.</p></div>
+<div><div class="av">SR</div><h3>Dr. Samuel Reid</h3><div class="role">Trust &amp; repair</div><p class="mut">Works with couples rebuilding after betrayal.</p></div></div></section>
+<section class="w" style="padding-top:0"><div class="photo cta i6"><h2>Meet a counselor before you commit.</h2><a href="#contact" class="btn">Book a free intro call</a></div></section>
+</main>
+
+<!-- BLOG -->
+<main class="page" id="p-blog" hidden>
+<div class="w ph"><span class="eb">The Mend Journal</span><h1 style="margin-top:12px">Practical reading for real relationships.</h1><p>Short, kind and useful. Tap any article to read it.</p></div>
+<section class="w" style="padding-top:20px"><div class="photo ban i1" style="min-height:240px"><div><h3>Small shifts, big difference.</h3></div></div></section>
+<section class="w bl">
+<details open><summary><small>Communication</small>Why the same argument keeps happening — and how to break the loop</summary><p>Most couples don’t fight about a hundred things; they fight about two or three, again and again. The dishes, the phone, the in-laws are often the same question underneath: “Do I matter to you?”</p><p>A common pattern is pursue–withdraw: one partner pushes for answers, the other goes quiet, and each makes the other’s response stronger. Try naming the pattern instead of the topic — “we’re doing the thing again” — then take a 20-minute break if either of you is overwhelmed, and agree a time to return. The goal isn’t to win; it’s to stop the loop running the show.</p></details>
+<details><summary><small>Trust</small>Rebuilding trust: what the early weeks can look like</summary><p>Trust rarely returns because someone says sorry once. It returns through repeated, unglamorous consistency: stopping the harmful behavior, answering questions honestly, agreeing what transparency means for now, and letting the hurt partner set the pace of hard conversations.</p><p>Expect setbacks — anger, grief and numbness can all appear in one week. That doesn’t mean it isn’t working. A counselor can keep these conversations structured so they don’t spiral into the same fight each night.</p></details>
+<details><summary><small>Closeness</small>When one of you wants more closeness than the other</summary><p>Differences in desire for closeness are among the most common things couples bring to counseling. The partner who wants more often feels rejected; the one who wants less often feels pressured. Neither is the villain.</p><p>Separate the request from the meaning: “I miss feeling close to you” lands very differently from “you never want me.” Low-pressure connection — a long hug, a walk, ten undistracted minutes — can rebuild safety. If stress, health or medication play a part, involve a doctor too.</p></details>
+<details><summary><small>Money</small>Money fights are rarely about money</summary><p>Money carries safety, freedom, fairness and the values you grew up with. Before opening a spreadsheet, ask each other what money meant in your family home and what “enough” would feel like.</p><p>Then make it practical: a calm monthly money meeting, shared goals first, a small no-questions-asked budget for each of you, and clear rules for big purchases. Hidden debt or spending is a trust issue as much as a money one.</p></details>
+<details><summary><small>Skills</small>How to raise a hard topic without starting a fight</summary><p>The first thirty seconds usually decide the next thirty minutes. Open softly with three parts: how you feel, what it’s about, and what you’d like. “I’ve felt disconnected lately. It’s about our evenings. Could we plan one phone-free night this week?”</p><p>Pick your moment — not at 11 p.m. or as the door opens — and listen for the feeling beneath the reply before answering the content.</p></details>
+<details><summary><small>Stress</small>Is it burnout, or is it the relationship?</summary><p>When work, kids or caregiving drain you, the relationship takes the hit and it’s easy to decide “we’re the problem.” Ask: do we feel better when outside pressure eases? Do we still enjoy each other when rested? Is the tension mostly logistics, or about respect and trust?</p><p>“We’re tired” and “we have a problem” can both be true. You don’t need a crisis to ask for support.</p></details>
+</section>
+<section class="w" style="padding-top:0"><div class="card" style="background:var(--blush);border:0"><h3>Get one gentle idea each week</h3><form onsubmit="event.preventDefault();this.innerHTML='<b>Thank you — you’re subscribed ✓</b>'" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><input type="email" required placeholder="you@example.com" aria-label="Email" style="max-width:300px;margin:0"><button class="btn">Subscribe</button></form></div></section>
+</main>
+
+<!-- FAQ -->
+<main class="page" id="p-faq" hidden>
+<div class="w ph"><span class="eb">FAQ</span><h1 style="margin-top:12px">Questions people ask before they start.</h1><p>Can’t find yours? Send us a message and a real person will reply.</p></div>
+<section class="w" style="padding-top:20px;max-width:860px">
+<details open><summary>Do we both have to come to sessions?</summary><p>No. Many people start solo and invite their partner later — or never. Individual sessions can still help you change your side of the pattern.</p></details>
+<details><summary>What if my partner doesn’t want to try counseling?</summary><p>That’s common. We can help you plan how to raise the idea gently, and support you individually in the meantime.</p></details>
+<details><summary>Will the counselor take sides?</summary><p>No. Counselors work with the relationship pattern, not with a “who’s right” scorecard, and aim to help both of you feel understood.</p></details>
+<details><summary>How do online sessions work?</summary><p>You join a private video link from any device. Sessions last 45 minutes, and you can be in the same room or in different places.</p></details>
+<details><summary>How long does it take to see a change?</summary><p>Every couple is different. Many notice calmer conversations within a few sessions, while deeper issues such as betrayal take longer. Your counselor will review progress with you regularly.</p></details>
+<details><summary>Is what we say confidential?</summary><p>Yes. Sessions are private and encrypted. Counselors share information only in the limited situations the law requires, such as serious risk of harm, and explain this before you begin.</p></details>
+<details><summary>What does it cost?</summary><p>Sample rates are $85 for individual and $120 for couples sessions, with a six-session program available. Ask about sliding-scale spots if cost is a barrier.</p></details>
+<details><summary>Is counseling right if there’s abuse in my relationship?</summary><p>If your partner threatens, controls or hurts you, couples counseling is usually not safe or appropriate. Please contact a domestic abuse helpline or emergency services first. We can offer individual support to help you plan.</p></details>
+<details><summary>Is Mend a crisis service?</summary><p>No. If you or someone else is in immediate danger, or you’re thinking about harming yourself, contact your local emergency number or a crisis line right away.</p></details>
+</section>
+<section class="w" style="padding-top:20px"><div class="photo cta i6"><h2>Still unsure? Talk to us first.</h2><a href="#contact" class="btn">Contact us</a></div></section>
+</main>
+
+<!-- CONTACT -->
+<main class="page" id="p-contact" hidden>
+<div class="w ph"><span class="eb">Get in touch</span><h1 style="margin-top:12px">Take the first step — we’ll take it with you.</h1><p>Tell us a little about what’s happening. We reply within one business day.</p></div>
+<section class="w" style="padding-top:20px"><div class="g2" style="align-items:start">
+<div><div id="ok">Thank you — your message is in. We’ll reply within one business day.</div>
+<form id="cf"><div class="r"><label class="f">Your name<input required placeholder="Alex Morgan"></label><label class="f">Email<input type="email" required placeholder="you@example.com"></label></div>
+<div class="r"><label class="f">This is for<select><option>Me, on my own</option><option>Me and my partner</option><option>Someone else</option></select></label><label class="f">Main concern<select><option>Communication</option><option>Trust or betrayal</option><option>Intimacy or distance</option><option>Money or life stress</option><option>Family or parenting</option><option>Breakup or separation</option><option>Not sure</option></select></label></div>
+<label class="f">What’s going on?<textarea rows="5" required placeholder="Share as much or as little as you like."></textarea></label>
+<button class="btn" type="submit">Send message</button><p class="mut" style="font-size:.82rem;margin-top:12px">Please don’t use this form in an emergency.</p></form></div>
+<div><div class="photo i3" style="min-height:220px;margin-bottom:20px"></div>
+<div class="card"><h3>Other ways to reach us</h3><p style="margin-top:10px">✉ hello@mendcounseling.example<br>☎ +1 (555) 010-2030<br>🕐 Mon–Sat, 8am–9pm (sessions online)</p></div>
+<div class="safe" style="margin-top:16px"><b>In an emergency</b> call your local emergency number. For abuse or crisis support, contact a helpline in your country.</div></div></div></section>
+</main>
+
+<footer><div class="w"><div class="fg"><div><div class="logo">Mend<i>.</i></div><p style="margin-top:10px;opacity:.75;max-width:320px;font-size:.92rem">Online relationship counseling for couples and individuals. Warm, practical and private.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#blog">Blog</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="#contact">Book a session</a></li><li>hello@mendcounseling.example</li><li>+1 (555) 010-2030</li></ul></div></div>
+<div class="cp">© 2026 Mend. Not a substitute for emergency or medical care. Photos via Pexels.</div></div></footer>
+
+<script>
+const T={home:'Mend — Relationship Counseling & Support',about:'About — Mend',blog:'Blog — Mend',faq:'FAQ — Mend',contact:'Contact — Mend'};
+function route(){let h=location.hash.slice(1);if(h==='quiz')h='home';if(!T[h])h='home';
+document.querySelectorAll('.page').forEach(e=>e.hidden=e.id!=='p-'+h);
+document.querySelectorAll('#menu a:not(.btn)').forEach(a=>a.classList.toggle('on',a.hash==='#'+h));
+menu.classList.remove('open');document.title=T[h];if(location.hash!=='#quiz')scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+const Q=["What’s one thing I did this week that made you feel cared for?","What’s something small we could do together this weekend?","Is there anything you’ve been wanting to tell me but haven’t found the moment?","What’s been the hardest part of your week, and how can I help?","What’s a memory of us that makes you smile?"];let qi=0;
+nq.onclick=()=>{qi=(qi+1)%Q.length;q.textContent=Q[qi]};
+const S=["We can disagree without it turning into a fight.","I feel heard when I share something that’s bothering me.","We make time for each other, even when life is busy.","I trust my partner, and I feel trusted.","I feel emotionally close to my partner."],O=["Rarely","Sometimes","Often","Almost always"];
+qs.innerHTML=S.map((s,i)=>`<fieldset><legend>${i+1}. ${s}</legend>${O.map((o,j)=>`<label><input type="radio" name="s${i}" value="${j+1}" style="width:auto;margin:0 4px 0 0"> ${o}</label>`).join('')}</fieldset>`).join('');
+qz.onsubmit=e=>{e.preventDefault();const d=[...new FormData(qz).values()];
+if(d.length<5){res.textContent='Please answer all five statements.'}else{const s=d.reduce((a,b)=>a+ +b,0);
+res.innerHTML=s<=9?'<b>Things feel heavy right now.</b><br>That’s hard, and it’s a good reason to reach out. Support early often makes things easier. <a href="#contact" style="color:var(--rose);font-weight:700">Talk to a counselor →</a>':s<=15?'<b>A mix of strengths and strain.</b><br>There’s something to build on. A few sessions can help you strengthen what works and untangle what doesn’t. <a href="#contact" style="color:var(--rose);font-weight:700">Book an intro call →</a>':'<b>A solid foundation.</b><br>You’re doing a lot right. Keep making time for each other — and if something changes, help is here. <a href="#blog" style="color:var(--rose);font-weight:700">Read our journal →</a>'}
+res.classList.add('s')};
+cf.onsubmit=e=>{e.preventDefault();ok.style.display='block';cf.reset();ok.scrollIntoView({behavior:'smooth',block:'center'})};
+</script>
+</body>
+</html>
